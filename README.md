@@ -190,6 +190,37 @@ Let f be a function that describes the running time of a particular algorithm fo
 
 ### Static and Dynamic Arrays
 
+#### Static Arrays
+A static array is a fixed length container ocntaining n elements indexable from the range [0, n-1].
+Static arrays are given as contigious chunks of memory (all address adjecent). 
+
+Used in:
+* Storing and accessing sequential data
+* Temporarily storing objects
+* Used by IO routines as buffers
+* Lookup tables and inverse lookup tables
+* Can be used to return multiple values from a function
+* Used in dynamic programming to cache answersw to subproblems
+
+#### Dynamic Arrays
+A dynamic array can grow and shrink in size.
+
+A dynamic array can be implemented using a static array:
+1. Create a static array with an inital capacity
+2. Add elements to the underlying static array, keeping tack of the number of elements.
+3. If adding another element will exceed the capacity, then create an new static array with twice the capacity and copy the original elements into it.
+
+#### Complexity - Static Array vs Dynamic Array
+
+|Function|Static Array|Dynamic Array|
+|--------|------------|-------------|
+|Access|O(1)|O(1)|
+|Search|O(n)|O(n)|
+|Insertion|N/A|O(n)|
+|Appending|N/A|O(1)|
+|Deletion|N/A|O(n)|
+
+### Singly and Doubly Linked Lists
 
 ## Authors
 
