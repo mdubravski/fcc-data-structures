@@ -71,8 +71,19 @@ Let f be a function that describes the running time of a particular algorithm fo
 >`c = a + 5*b`
 
 >`i = 0`
->`while(i < 11){`
->`  i = i + 1`
+>`while(i < 11){i = i + 1}`
+
+>`Example 3`
+
+>`The following run in constant time: O(n)`
+
+>`i = 0
+    while(i < n>){
+        i = i + 1;
+    }`
+
+>`i = 0`
+>`while(i < 11){i = i + 1}`
 
 ## Authors
 
