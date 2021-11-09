@@ -77,13 +77,14 @@ Let f be a function that describes the running time of a particular algorithm fo
 
 >`The following run in constant time: O(n)`
 
->`i = 0
-    while(i < n>){
-        i = i + 1;
-    }`
+>`i = 0 while(i < n){i = i + 1;} (f(n) = n)`
 
->`i = 0`
->`while(i < 11){i = i + 1}`
+>```
+    i = 0;
+    while(i < 11){
+        i = i + 3
+    } (f(n) = n/3)
+ ```
 
 ## Authors
 
