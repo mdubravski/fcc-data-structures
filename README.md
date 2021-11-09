@@ -48,17 +48,31 @@ Big O notation gives an upper bound of the complexity in the worst case, helping
 
 #### Big O Properties
 We drop constant terms that wont effect growth as input become arbitrarily large.
-We also from slower growing terms.
+We also drop slower growing terms.
+>`Example 0`
 
 >`O(n + c) = O(n)`
 
 >`O(cn) = O(n), c > 0`
 
 Let f be a function that describes the running time of a particular algorithm for an input of size `n`.
+>`Example 1`
 
 >`f(n) = 7log(n)^3 + 15n^2 + 2n^3`
 
 >`O(f(n)) = O(n^3)`
+
+>`Example 2`
+
+>`The following run in constant time: O(1)`
+
+>`a = 1`
+>`b = 2`
+>`c = a + 5*b`
+
+>`i = 0`
+>`while(i < 11){`
+>`  i = i + 1`
 
 ## Authors
 
