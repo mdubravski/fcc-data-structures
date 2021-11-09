@@ -44,18 +44,20 @@ Big O notation gives an upper bound of the complexity in the worst case, helping
 | Quadratic Time   | O(n^2)|
 | Cubic Time       | O(n^3)|
 | Exponential Time | O(b^n)|
-| Factorial Time   | !n|
+| Factorial Time   | O(!n)|
 
 #### Big O Properties
 We drop constant terms that wont effect growth as input become arbitrarily large.
 We also from slower growing terms.
 
 >`O(n + c) = O(n)`
+
 >`O(cn) = O(n), c > 0`
 
 Let f be a function that describes the running time of a particular algorithm for an input of size `n`.
 
 >`f(n) = 7log(n)^3 + 15n^2 + 2n^3`
+
 >`O(f(n)) = O(n^3)`
 
 ## Authors
