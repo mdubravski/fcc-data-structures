@@ -35,7 +35,7 @@ How much time does this algorithm need to finish? How much space does this algor
 Big O notation gives an upper bound of the complexity in the worst case, helping to quantify performance as the input size becomes arbitrarily large.
 
 #### Complexities ordered in from smallest to largest (n = size of the input)
-|       Name       |     O()    |
+|       Name       |     O(n)    |
 |------------------|------------|
 | Constant Time    | O(1)|
 | Logarithmic Time | O(log(n))|
