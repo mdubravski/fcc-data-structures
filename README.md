@@ -221,6 +221,43 @@ A dynamic array can be implemented using a static array:
 |Deletion|N/A|O(n)|
 
 ### Singly and Doubly Linked Lists
+A linked list is a sequential list of nodes that hold data which point to other nodes also containing data. The head is the first node in a liked list. The tail is the last node in a linked list. A pointer is a reference to antoher node. A node is an object containing data and pointer(s).
+
+Used in:
+* Used in many List, Queue & Stack implementations
+* Great for creating circular lists
+* Can easily model real world objects such as trains
+* Used in separate chaining, which is present in certain Hastable implementations to deal with hashing collisions
+* Often used in the implementation of adjacency lists for graphs
+
+#### Singly Linked List
+A singly linked list only holds a reference to the next node. In the implementation you always maitian a referece to the head to the linked list and a reference to the tail node for quick additions/removals.
+
+
+#### Doubly Linked List
+With a doubly linked list each node holds a reference to a next and previous node. In the implementation you alwayts amintain a refenrece to the head and the tail of the doubly linked list to do quick additions/removals from both ends of your list.
+
+#### Singly & Doubly Linked List Pros and Cons
+
+|Type|Pros|Cons|
+|--------|------------|-------------|
+|Singly Linked List|Uses less memory, Simpler implemenation|Cannot easily access previous element|
+|Doubly Linked List|Can be traversed bakcwards|Takes 2x memory|
+
+#### Complexity - Singly Linked List vs Doubly Linked List
+
+|Function|Singly Linked|Doubly Linked|
+|--------|------------|-------------|
+|Search|O(n)|O(n)|
+|Insertion at head|O(1)|O(1)|
+|Insertion at tail|O(1)|O(1)|
+|Remove at head|O(1)|O(1)|
+|Remove at tail|O(n)|O(1)|
+|Remove in middle|O(n)|O(n)|
+
+
+
+
 
 ## Authors
 
