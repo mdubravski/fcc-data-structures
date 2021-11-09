@@ -49,42 +49,147 @@ Big O notation gives an upper bound of the complexity in the worst case, helping
 #### Big O Properties
 We drop constant terms that wont effect growth as input become arbitrarily large.
 We also drop slower growing terms.
->`Example 0`
-
+##### Example 0
 >`O(n + c) = O(n)`
 
 >`O(cn) = O(n), c > 0`
 
+##### Example 1
 Let f be a function that describes the running time of a particular algorithm for an input of size `n`.
->`Example 1`
 
 >`f(n) = 7log(n)^3 + 15n^2 + 2n^3`
 
 >`O(f(n)) = O(n^3)`
 
->`Example 2`
+##### Example 2
 
->`The following run in constant time: O(1)`
+>The following run in constant time: `O(1)`
 
->`a = 1`
->`b = 2`
->`c = a + 5*b`
+```
+    a = 1
+    b = 2
+    c = a + 5* b
+```
+```
+    while(i < 11){
+        i = i + 1
+    }
+```
 
->`i = 0`
->`while(i < 11){i = i + 1}`
+##### Example 3
 
->`Example 3`
+>The following run in linear time: `O(n)`
 
->`The following run in constant time: O(n)`
-
->`i = 0 while(i < n){i = i + 1;} (f(n) = n)`
-
->```
+```
+    // fn(n) = n
+    i = 0
+    while(i < n){
+        i = i + 1
+    }
+```
+```
+    // f(n) = n/3
     i = 0;
     while(i < 11){
         i = i + 3
-    } (f(n) = n/3)
- ```
+    } 
+```
+
+##### Example 4
+
+>The following run in quadratic time: `O(n^2)`
+
+```
+    // fn(n) = n*n = n^2
+    for(i = 0; i < n; i++){
+        for(j = 0; j < n; j++){
+            // do something
+        }
+    }
+```
+```
+    // fn(n) = n(n+1)/2 = n^2/2 + n/2
+    for(i = 0; i < n; i++){
+        for(j = i; j < n; j++){
+            // do something
+        }
+    }
+```
+
+##### Example 5
+
+>Suppose we have a sorted array and we want to find the index of a particualr value in the array, if it exists.
+>What is the time complexity of the following alogrithm?
+
+```
+    // fn(n) = log2(n) = log(n)
+    function(value){
+        low = 0
+        high= n-1
+        while(low <= high){
+            mid = (low+high) / 2
+            if(array[mid] == value){
+                return mid
+            }else if(array[mid] < value){
+                low = mid + 1
+            }else if(array[mid] > value){
+                high = mid - 1
+            }
+        }
+        return -1 // value not found
+    }
+```
+> O(f(n)) = O(log(n))
+
+##### Example 6
+
+```
+    // f(n) = n * (3n + 2n) = 5n^2
+    i = 0
+    while(i < n){
+        j = 0
+        while(j < 3*n){
+            j++
+        }
+        j = 0;
+        while(j < 2*n){
+            j++
+        }
+        i++
+    }
+```
+> O(f(n)) = O(n^2)
+
+##### Example 7
+
+```
+    // f(n) = 3n * (40 + (n^3)/2) = 3n/40 + (3n^4)/2
+    i = 0
+    while(i < 3*n){
+        j = 10
+        while(j < 50){
+            j++;
+        }
+        j = 0;
+        while(j < n*n*n){
+            j = j + 2
+        }
+        i++
+    }
+```
+> O(f(n)) = O(n^4)
+
+##### Example 8
+>Finding all subsets of a set = `O(2^n)`
+
+>Finding all permutations of a string = `O(n!)`
+
+>Sorting using mergesort = `O(nlog(n))`
+
+>Iterating over all the cells in a matrix of size n by m = `O(nm)`
+
+### Static and Dynamic Arrays
+
 
 ## Authors
 
