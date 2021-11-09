@@ -2,7 +2,7 @@ import java.util.*;
 
 /*
  *
- * An implemintation of a generic dynamic array build from static arrays
+ * An implementation of a generic dynamic array build from static arrays
  *  
  */
 public class Array<T> implements Iterable<T>{
