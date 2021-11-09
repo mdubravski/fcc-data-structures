@@ -28,8 +28,35 @@ The interface does not give any spicific details about how something should be i
 | Vehicle          | Glof Cart, Bicycle, Car|
 
 
-### Data Structure
-A data strucute is a way of organizing data so that it can be used effectively.
+### Computational Complexity Analysis
+How much time does this algorithm need to finish? How much space does this algorithm need to finish?
+
+#### Big O Notation
+Big O notation gives an upper bound of the complexity in the worst case, helping to quantify performance as the input size becomes arbitrarily large.
+
+#### Complexities ordered in from smallest to largest (n = size of the input)
+|       Name       |     O()    |
+|------------------|------------|
+| Constant Time    | O(1)|
+| Logarithmic Time | O(log(n))|
+| Linear Time      | O(n)|
+| Log-Linear Time  | O(nlog(n))|
+| Quadratic Time   | O(n^2)|
+| Cubic Time       | O(n^3)|
+| Exponential Time | O(b^n)|
+| Factorial Time   | !n|
+
+#### Big O Properties
+We drop constant terms that wont effect growth as input become arbitrarily large.
+We also from slower growing terms.
+
+>`O(n + c) = O(n)`
+>`O(cn) = O(n), c > 0`
+
+Let f be a function that describes the running time of a particular algorithm for an input of size `n`.
+
+>`f(n) = 7log(n)^3 + 15n^2 + 2n^3`
+>`O(f(n)) = O(n^3)`
 
 ## Authors
 
