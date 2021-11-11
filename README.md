@@ -1,6 +1,6 @@
 # Free Code Camp - Data Structure Course
 
-Implements of data structures and their respective functions from Free Code Camp's Data Structures course.
+Implementations of data structures and their respective functions from Free Code Camp's Data Structures course.
 
 ## Notes
 
@@ -68,7 +68,7 @@ Let f be a function that describes the running time of a particular algorithm fo
 ```
     a = 1
     b = 2
-    c = a + 5* b
+    c = a + 5 * b
 ```
 ```
     while(i < 11){
